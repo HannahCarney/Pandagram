@@ -26,6 +26,10 @@ gem 'aws-sdk'
 
 gem 'devise'
 
+gem 'sprockets-rails'
+
+gem 'bootstrap-sass', '~> 3.2.0.2'
+
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use ActiveModel has_secure_password

@@ -14,6 +14,7 @@ require "sprockets/railtie"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+
 module Pandagram
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
@@ -29,6 +30,7 @@ module Pandagram
     # config.i18n.default_locale = :de
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
+
     config.active_record.raise_in_transactional_callbacks = true
   end
 end
