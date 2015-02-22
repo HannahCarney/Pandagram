@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   devise_for :users
 
   root to: 'home#index'
+  get 'posts' => 'posts#index'
+  resources :restaurants
 
   resources :home
   # The priority is based upon order of creation: first created -> highest priority.

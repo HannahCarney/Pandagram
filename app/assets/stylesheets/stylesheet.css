@@ -28,8 +28,6 @@ textarea {
   font-size: 1.7em;
   color: #fff;
   text-transform: uppercase;
-  letter-spacing: -1px;
-  padding-top: 9px;
   font-weight: bold;
 }
 
@@ -94,4 +92,24 @@ footer ul {
 footer ul li {
   float: left;
   margin-left: 15px;
+}
+
+.name {
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin-top:1em;
+}
+
+#pandalogo {
+  height:4em;
+  width:4em;
+}
+
+#pandalogosmall {
+  height:4em;
+  width:4em;
+  margin-left:1em;
 }
