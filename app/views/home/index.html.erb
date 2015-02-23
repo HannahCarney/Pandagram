@@ -1,12 +1,11 @@
 <html>
-
 <div class="center jumbotron">
-    <% if user_signed_in? %>              
-        Posts
-    <% else %>
-        <h1>Welcome to Pandagram</h1>
-        <h2>A new social media site for sharing pictures of pandas</h2>
-        <%= link_to "Sign up now!", '/users/sign_up', class: "btn btn-lg btn-primary" %>
-    <% end %>
+    <%= stylesheet_link_tag "application", media: "all",
+                                           "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
+    <h1>Welcome to Pandagram</h1>
+    <h2>A new social media site for sharing pictures of pandas</h2>
+    <%= link_to "Sign up now!", '/users/sign_up', class: "btn btn-lg btn-primary" %>
 </div>
 </html>

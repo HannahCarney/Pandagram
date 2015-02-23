@@ -26,10 +26,10 @@ include ResponsiveHelpers
 
 context 'it has a reactive design' do
 
-  it 'when extra small "pandagram" should not be seen' do
+  it 'logo should be seen' do
     visit ('/')
     resize_window_to_mobile
-    expect(page).not_to have_content('logo')
+    expect(page).to have_selector('#logo')
   end
   
 end

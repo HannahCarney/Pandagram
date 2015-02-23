@@ -48,6 +48,12 @@ Rails.application.configure do
   # when problems arise.
   config.log_level = :debug
 
+  # heroku
+  config.cache_classes = true
+  config.serve_static_assets = true  
+  config.assets.compile = true
+  config.assets.digest = true
+
   # Prepend all log lines with the following tags.
   # config.log_tags = [ :subdomain, :uuid ]
 
