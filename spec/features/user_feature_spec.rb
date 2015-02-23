@@ -17,7 +17,8 @@ context "user signed in on the homepage" do
 
   before do
     visit('/')
-    click_link('Sign up')
+    click_link('Sign up now!')
+    fill_in('Username', with: 'Hannah')
     fill_in('Email', with: 'test@example.com')
     fill_in('Password', with: 'testtest')
     fill_in('Password confirmation', with: 'testtest')
@@ -32,5 +33,25 @@ context "user signed in on the homepage" do
   it "should not see a 'Log in'" do
     visit('/')
     expect(page).not_to have_link('Log in')
+  end
+
+  it "should be able to login with username" do
+    visit('/')
+    click_link('Sign out')
+    click_link('Log in')
+    fill_in('Login', with: 'Hannah')
+    fill_in('Password', with: 'testtest')   
+    click_button('Log in')
+    expect(page).to have_content('Hannah')
+  end
+
+  it "should be able to login with email" do
+    visit('/')
+    click_link('Sign out')
+    click_link('Log in')
+    fill_in('Login', with: 'test@example.com')
+    fill_in('Password', with: 'testtest')   
+    click_button('Log in')
+    expect(page).to have_content('Hannah')
   end
 end

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<html>
 <header id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
@@ -12,18 +12,20 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
             </button>
             <img src="/assets/logo.png" class="visible-xs-block" id="pandalogosmall">
         </div>
                 
        
         <div class="collapse navbar-collapse" id="navbarCollapse">
-           <ul class="nav navbar-nav navbar-left">
-                <li><img src="/assets/logo.png" id="pandalogo" </li>
+           <ul class="nav navbar-nav navbar-left hidden-xs">
+                <li><img src="/assets/logo.png" id="pandalogo" class="hidden-xs"</li>
                 <li><%= link_to "Pandagram", '/', id: "logo" %></li>
             </ul>
             
             <ul class="nav navbar-nav navbar-right">
+                <li class="visible-xs-block"><%= link_to "Pandagram", '/', id: "logo1"  %></li>
                 <li><%= link_to "Home",   '/' %></li>
                 <li><%= link_to "Help",   '/help' %></li>
                 <% if user_signed_in? %>
