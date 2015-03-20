@@ -46,7 +46,7 @@ Set up postgreSQL
 psql
 \l
 CREATE DATABASE pandagram_development ;
-CREATE DATABASE pandagram_clone_test ;
+CREATE DATABASE pandagram_test ;
 \q
 ```
 
