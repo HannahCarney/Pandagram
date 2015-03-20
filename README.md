@@ -9,7 +9,11 @@ Heroku (live)
 Screenshot
 ----
 <div align="center">
-        <img width="45%" src="public/images/screenshot.png">
+    <img width="20%" src="app/assets/images/pandagram.png">
+</div>
+<p></p>
+<div align="center">
+   <img width="45%" src="app/assets/images/screenshot.png">
 </div>
 
 Technologies used
